@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar target/serviceconnect-backend-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod
+web: java $JAVA_OPTS -jar target/serviceconnect-backend-1.0.0.jar --spring.profiles.active=prod

@@ -6,6 +6,6 @@ RUN mvn dependency:go-offline -q && mvn clean package -DskipTests -q
 
 FROM eclipse-temurin:17-jre
 WORKDIR /app
-COPY --from=builder /app/target/serviceconnect-backend-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=builder /app/target/serviceconnect-backend-1.0.0.jar app.jar
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "app.jar", "--spring.profiles.active=prod"]
